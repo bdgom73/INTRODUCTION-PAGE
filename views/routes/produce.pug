@@ -1,28 +1,88 @@
 // PRODUCE
 .produce_container.page#produce
     .title PROJECT 
-    .index_wrap    
+    .index_wrap(style=" justify-content: center")    
         .produce_card 
             .produce_img
                 img(src="/public/image/produce/opendb/home.jpg")
+                .produce_pm 
+                    img(src='/public/image/produce/opendb/home_sm.png')
             .produce_explain 
-                .produce_title open DB 테스트 페이지
+                .produce_title(style="color : #0067a3") Web SQL 테스트 페이지
                 ul 
-                    li React, Web SQL을 사용한 테이블 생성, 삭제, 수정 및 데이터 쓰기, 읽기, 수정, 삭제 테스트 페이지입니다. 
+                    li React, Web SQL을 사용한 생성, 삭제, 수정, 읽기 테스트 페이지입니다.
+                    li Web SQL 에 저장된 테이블 및 데이터 CRUD          
                 .produce_etc 
-                    button.demo(type="button" onclick="window.open('https://master.d3qhackjcqfjcb.amplifyapp.com/')") DEMO
+                    button.demo(type="button" onclick="window.open('https://master.d3qhackjcqfjcb.amplifyapp.com/')") 
+                        | Demo
                     button.git(type="button" onclick="window.open('https://github.com/bdgom73/websqlTest')")
                         img(src="/public/image/skills/github.svg", alt="github_logo") 
                         | GitHub   
+            .use_skills 
+                .c_skill 
+                    img(src="/public/image/skills/react2.png") 
+                .c_skill 
+                    img(src="/public/image/skills/ws.svg")  
         .produce_card 
             .produce_img
-                img(src="/public/image/produce/wetube/home.jpg")
+                img(src="/public/image/produce/wetube/home.jpg")    
+                .produce_pm 
+                    img(src='/public/image/produce/wetube/home_sm.png')       
             .produce_explain 
-                .produce_title WeTube
+                .produce_title(style="color : #c4302b") WeTube
                 ul 
-                    li node.js, pug,  mongo db를 이용한 Youtube clone 사이트입니다.
-                .produce_etc 
-                    //- button.demo(type="button" onclick="window.open('https://master.d3qhackjcqfjcb.amplifyapp.com/')") DEMO
+                    li Nodejs, MongoDB, Pug를 이용한 Youtube clone 사이트입니다.
+                    li 동영상 업로드 · 보기 · 수정 · 삭제, 회원관리, 검색, 비디오 컨트롤러
+                .produce_etc  
                     button.git(type="button" onclick="window.open('https://github.com/bdgom73/wetube')")
                         img(src="/public/image/skills/github.svg", alt="github_logo") 
                         | GitHub
+            .use_skills 
+                .c_skill 
+                    img(src="/public/image/skills/node.svg") 
+                .c_skill 
+                    img(src="/public/image/skills/mongo.png")
+                .c_skill 
+                    img(src="/public/image/skills/pug.svg")
+        .produce_card 
+            .produce_img
+                img(src="/public/image/produce/weather/home.jpg")    
+                .produce_pm 
+                    img(src='/public/image/produce/weather/home_sm.jpg')       
+            .produce_explain 
+                .produce_title MyHomeApp
+                ul 
+                    li React , Java Spring, MySQL or H2  이용한 MyHome App WebSite입니다.
+                    li 날씨API, 구글지도API, 캘린더, 게시판 CRUD, 회원관리, 검색
+                .produce_etc  
+                    button.git(type="button" onclick="window.open('https://github.com/bdgom73/myhomeApp')")
+                        img(src="/public/image/skills/github.svg", alt="github_logo") 
+                        | GitHub F
+                    button.git(style='background: #c9d2d9; color : #222;',type="button" onclick="window.open('https://github.com/bdgom73/myhomeServer')")
+                        img(src="/public/image/skills/github.svg", alt="github_logo",style="filter: invert(11%) sepia(0%) saturate(4%) hue-rotate(31deg) brightness(93%) contrast(90%);") 
+                        | GitHub B
+            .use_skills 
+                .c_skill 
+                    img(src="/public/image/skills/react2.png") 
+                .c_skill 
+                    img(src="/public/image/skills/spring.svg")
+                .c_skill 
+                    img(src="/public/image/skills/mysql.png")
+                .c_skill 
+                    img(src="/public/image/skills/h2.png")
+        .produce_card 
+            .produce_img
+                img(src="/public/image/produce/clock/home.JPG")    
+                .produce_pm 
+                    img(src='/public/image/produce/clock/home.JPG')       
+            .produce_explain 
+                .produce_title P5 시계
+                ul 
+                    li p5.js를 이용한 간단한 시계
+                .produce_etc  
+                    button.git(disabled=true,type="button" onclick="window.open('https://github.com/bdgom73/myhomeApp')")
+                        img(src="/public/image/skills/github.svg", alt="github_logo") 
+                        | GitHub          
+            .use_skills 
+                .c_skill 
+                    img(src="/public/image/skills/p5js.svg")

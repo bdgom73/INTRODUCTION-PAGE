@@ -8,7 +8,7 @@ app.set('views', 'views');
 app.use('/public', express.static('public'));
 
 app.get('/', (req, res) => {
-  res.render("routes/index.pug",{test : [{name : "A",age: 18},{name : "B",age :20}]});
+  res.render("routes/index.pug");
 })
 
 app.listen(port, () => {

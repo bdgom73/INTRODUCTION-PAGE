@@ -5,16 +5,7 @@ $(document).ready(function(){
     //     document.getElementById('intro_g').getContext("2d"),
     //     config
     // );
-    $(window).on('scroll',(e)=>{
-        let exeScroll = $(".page").eq(1).offset().top;
-        let clientScroll = $('body').scrollTop();
-       
-        if(clientScroll <= exeScroll-50){
-            $("header").css('opacity',0);
-        }else{
-            $("header").css('opacity',1);
-        }
-    })
+    opacityWhenScrollingHandler();
 });
     
     
@@ -25,7 +16,18 @@ const movePage = (page)=>{
    
 }
 
- 
+const opacityWhenScrollingHandler =()=>{
+    $(window).on('scroll',(e)=>{
+        let exeScroll = $(".page").eq(1).offset().top;
+        let clientScroll = $('body').scrollTop();
+       
+        if(clientScroll <= exeScroll-50){
+            $("header").css('opacity',0);
+        }else{
+            $("header").css('opacity',1);
+        }
+    })
+}
 
 let datas = {
     labels: ['외향형', '내향형', '직관형','현실주의형','이성적사고형','원칙주의형','계획형','탐색형','자기주장형','신중형'],
