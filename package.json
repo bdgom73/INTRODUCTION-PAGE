@@ -6,8 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "assets" : "node-sass public/scss/index.scss public/css/index.css",
-    "server " : "nodemon src/index.js",
-    "start" : "npm run restart",
+    "start" : "node-sass public/scss/index.scss public/css/index.css && nodemon src/index.js",
     "restart" : "npm run assets & npm run server"
   },
   "keywords": [
