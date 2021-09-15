@@ -4,9 +4,9 @@
     .index_wrap(style=" justify-content: center")    
         .produce_card 
             .produce_img
-                img(src="/public/image/produce/opendb/home.jpg")
+                img(src="/public/image/produce/opendb/home.jpg",onclick="viewMoreImages('/public/image/produce/opendb/home.jpg')")
                 .produce_pm 
-                    img(src='/public/image/produce/opendb/home_sm.png')
+                    img(src='/public/image/produce/opendb/home_sm.png',onclick="viewMoreImages('/public/image/produce/opendb/home_sm.png','true')")
             .produce_explain 
                 .produce_title(style="color : #0067a3") Web SQL 테스트 페이지
                 ul 
@@ -25,9 +25,9 @@
                     img(src="/public/image/skills/ws.svg")  
         .produce_card 
             .produce_img
-                img(src="/public/image/produce/wetube/home.jpg")    
+                img(src="/public/image/produce/wetube/home.jpg", onclick="viewMoreImages('/public/image/produce/wetube/home.jpg')")    
                 .produce_pm 
-                    img(src='/public/image/produce/wetube/home_sm.png')       
+                    img(src='/public/image/produce/wetube/home_sm.png', onclick="viewMoreImages('/public/image/produce/wetube/home_sm.png','true')")       
             .produce_explain 
                 .produce_title(style="color : #c4302b") WeTube
                 ul 
@@ -46,9 +46,9 @@
                     img(src="/public/image/skills/pug.svg")
         .produce_card 
             .produce_img
-                img(src="/public/image/produce/weather/home.jpg")    
+                img(src="/public/image/produce/weather/home.jpg", onclick="javascript:viewMoreImages('/public/image/produce/weather/home.jpg')")    
                 .produce_pm 
-                    img(src='/public/image/produce/weather/home_sm.jpg')       
+                    img(src='/public/image/produce/weather/home_sm.jpg', onclick="javascript:viewMoreImages('/public/image/produce/weather/home_sm.jpg',true)")       
             .produce_explain 
                 .produce_title MyHomeApp
                 ul 
@@ -72,9 +72,9 @@
                     img(src="/public/image/skills/h2.png")
         .produce_card 
             .produce_img
-                img(src="/public/image/produce/workoutApp/home.JPG")    
+                img(src="/public/image/produce/workoutApp/home.JPG",onclick="javascript:viewMoreImages('/public/image/produce/workoutApp/home.JPG')")    
                 .produce_pm 
-                    img(src='/public/image/produce/workoutApp/home_sm.JPG')       
+                    img(src='/public/image/produce/workoutApp/home_sm.JPG' ,onclick="javascript:viewMoreImages('/public/image/produce/workoutApp/home_sm.JPG',true)")       
             .produce_explain 
                 .produce_title EXMA Workout APP
                 ul 
@@ -94,3 +94,5 @@
                     img(src="/public/image/skills/spring.svg")
                 .c_skill 
                     img(src="/public/image/skills/h2.png")
+
+script(src='public/js/modal.js')
