@@ -282,6 +282,7 @@ header{
             justify-content: center;             
         }
     }
+
     .skill_box{
         position: relative;
         background-color: #ffffff;
@@ -293,6 +294,14 @@ header{
         border-bottom-right-radius: 50px;
         border-bottom-left-radius: 50px;
         overflow: hidden;
+        .skill_check{
+            display: block;
+            position: absolute;
+            top:7px;
+            right: 20px;
+            color: #07b101 !important;
+            font-size: 18px;      
+        }
         .skill_back:hover{ opacity: 1;}
         .skill_back{
             transition: all .5s;
@@ -353,8 +362,9 @@ header{
             height: 100%;
         }
     }
+   
 }
-  
+
 .produce_container{
     font-family: 'Jua', sans-serif;
     width: 100%;

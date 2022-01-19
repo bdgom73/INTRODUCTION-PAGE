@@ -303,6 +303,13 @@ header {
     border-bottom-right-radius: 50px;
     border-bottom-left-radius: 50px;
     overflow: hidden; }
+    .skills_container .skill_box .skill_check {
+      display: block;
+      position: absolute;
+      top: 7px;
+      right: 20px;
+      color: #07b101 !important;
+      font-size: 18px; }
     .skills_container .skill_box .skill_back:hover {
       opacity: 1; }
     .skills_container .skill_box .skill_back {
